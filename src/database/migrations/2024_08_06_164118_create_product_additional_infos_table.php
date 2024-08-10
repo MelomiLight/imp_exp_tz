@@ -25,14 +25,14 @@ return new class extends Migration
             $table->string('seo_title')->nullable();
             $table->string('seo_h1')->nullable();
             $table->text('seo_description')->nullable();
-            $table->unsignedInteger('weight_product')->nullable()->comment('Вес товара(г)');
-            $table->unsignedInteger('width_product')->nullable()->comment('Ширина(мм)');
-            $table->unsignedInteger('height_product')->nullable()->comment('Высота(мм)');
-            $table->unsignedInteger('length_product')->nullable()->comment('Длина(мм)');
-            $table->unsignedInteger('weight_package')->nullable()->comment('Вес упаковки(г)');
-            $table->unsignedInteger('width_package')->nullable()->comment('Ширина упаковки(мм)');
-            $table->unsignedInteger('height_package')->nullable()->comment('Высота упаковки(мм)');
-            $table->unsignedInteger('length_package')->nullable()->comment('Длина упаковки(мм)');
+            $table->unsignedInteger('weight_product_g')->nullable()->comment('Вес товара(г)');
+            $table->unsignedInteger('width_product_mm')->nullable()->comment('Ширина(мм)');
+            $table->unsignedInteger('height_product_mm')->nullable()->comment('Высота(мм)');
+            $table->unsignedInteger('length_product_mm')->nullable()->comment('Длина(мм)');
+            $table->unsignedInteger('weight_package_g')->nullable()->comment('Вес упаковки(г)');
+            $table->unsignedInteger('width_package_mm')->nullable()->comment('Ширина упаковки(мм)');
+            $table->unsignedInteger('height_package_mm')->nullable()->comment('Высота упаковки(мм)');
+            $table->unsignedInteger('length_package_mm')->nullable()->comment('Длина упаковки(мм)');
             $table->string('category')->nullable();
 
             $table->timestamps();

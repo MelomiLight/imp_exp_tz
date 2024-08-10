@@ -12,11 +12,13 @@ return new class extends Migration {
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->uuid()->unique();
             $table->string('external_code')->unique();
             $table->string('name')->nullable();
             $table->text('description')->nullable();
-            $table->decimal('price')->nullable()->comment('Цена в рублях');
+            $table->decimal('price')->nullable()->comment('Цена');
+            $table->string('currency_price')->nullable()->comment('Валюта цены');
+            $table->decimal('purchase_price')->nullable()->comment('Закупочная цена');
+            $table->string('currency_purchase_price')->nullable()->comment('Валюта закупочной цены');
             $table->decimal('discount')->nullable();
             $table->timestamps();
         });

@@ -20,14 +20,14 @@ class ProductAdditionalInfo extends Model
         'seo_title',
         'seo_h1',
         'seo_description',
-        'weight_product',
-        'width_product',
-        'height_product',
-        'length_product',
-        'weight_package',
-        'width_package',
-        'height_package',
-        'length_package',
+        'weight_product_g',
+        'width_product_mm',
+        'height_product_mm',
+        'length_product_mm',
+        'weight_package_g',
+        'width_package_mm',
+        'height_package_mm',
+        'length_package_mm',
         'category'
     ];
 
